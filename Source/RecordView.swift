@@ -89,13 +89,13 @@ public class RecordView: UIView, CAAnimationDelegate {
         bucketImageView.heightAnchor.constraint(equalToConstant: 20).isActive = true
 
 
-        timerStackView = UIStackView(arrangedSubviews: [bucketImageView, timerLabel])
+        timerStackView = UIStackView(arrangedSubviews: [timerLabel,bucketImageView])
         timerStackView.translatesAutoresizingMaskIntoConstraints = false
         timerStackView.isHidden = true
         timerStackView.spacing = 5
 
 
-        slideToCancelStackVIew = UIStackView(arrangedSubviews: [arrow, slideLabel])
+        slideToCancelStackVIew = UIStackView(arrangedSubviews: [slideLabel,arrow])
         slideToCancelStackVIew.translatesAutoresizingMaskIntoConstraints = false
         slideToCancelStackVIew.isHidden = true
 
@@ -107,11 +107,11 @@ public class RecordView: UIView, CAAnimationDelegate {
         arrow.widthAnchor.constraint(equalToConstant: 15).isActive = true
         arrow.heightAnchor.constraint(equalToConstant: 15).isActive = true
 
-        slideToCancelStackVIew.trailingAnchor.constraint(equalTo: self.trailingAnchor).isActive = true
+        slideToCancelStackVIew.rightAnchor.constraint(equalTo: self.rightAnchor).isActive = true
         slideToCancelStackVIew.centerYAnchor.constraint(equalTo: self.centerYAnchor).isActive = true
 
 
-        timerStackView.leadingAnchor.constraint(equalTo: self.leadingAnchor).isActive = true
+        timerStackView.leftAnchor.constraint(equalTo: self.leftAnchor).isActive = true
         timerStackView.centerYAnchor.constraint(equalTo: self.centerYAnchor).isActive = true
 
 
