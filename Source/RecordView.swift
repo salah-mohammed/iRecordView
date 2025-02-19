@@ -67,7 +67,7 @@ public class RecordView: UIView, CAAnimationDelegate {
 
     private let slideLabel: UILabel = {
         let slide = UILabel()
-        slide.text = "Slide To Cancel"
+        slide.text = "اسحب للإلغاء"
         slide.translatesAutoresizingMaskIntoConstraints = false
         slide.font = slide.font.withSize(12)
         return slide
