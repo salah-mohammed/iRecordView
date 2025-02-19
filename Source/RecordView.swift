@@ -24,7 +24,7 @@ public class RecordView: UIView, CAAnimationDelegate {
     public weak var delegate: RecordViewDelegate?
     public var offset: CGFloat = 20
     public var isSoundEnabled = true
-    public var buttonTransformScale: CGFloat = 2
+    public var buttonTransformScale: CGFloat = 1.3
 
     public var slideToCancelText: String! {
         didSet {
